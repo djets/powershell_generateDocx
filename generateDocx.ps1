@@ -86,7 +86,7 @@ if($arrString.Count -ge 0) {
             $sortedSetEmployees.add($hashSetEmployees.$key.$sorting_field, $key)
         }
         catch {
-            [string]$str = $hashSetEmployees.$key.fio
+            [string]$str = $hashSetEmployees.$key.$sorting_filed
             Write-Warning  "$str - дублирующая запись"
             # $PSItem.Exception
         }
